@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: bank-account-microservice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bank-account-service-db
+      auto-index-creation: true
+  webflux:
+    base-path: /api/v1
+server:
+  port: 9002
