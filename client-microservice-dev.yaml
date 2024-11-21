@@ -6,6 +6,6 @@ spring:
       uri: mongodb://localhost:27017/bank-client-service-db
       auto-index-creation: true
   webflux:
-    base-path: /api/v1
+    base-path: /api/v1/clients
 server:
   port: 9001
