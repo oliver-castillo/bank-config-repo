@@ -1,9 +1,15 @@
 spring:
   application:
-    name: bank-api-gateway
+    name: bank-account-microservice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bank-account-service-db
+      auto-index-creation: true
+  webflux:
+    base-path: /api/v1/accounts
 server:
-  port: 9000
-
+  port: 9003
+  
 eureka:
   client:
     service-url:
