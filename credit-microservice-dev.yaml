@@ -1,15 +1,15 @@
 spring:
   application:
-    name: bank-product-microservice
+    name: bank-credit-microservice
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bank-product-service-db
+      uri: mongodb://localhost:27017/bank-credit-service-db
       auto-index-creation: true
   webflux:
-    base-path: /api/v1/products
+    base-path: /api/v1/credits
 server:
-  port: 8084
-
+  port: 7075
+  
 eureka:
   client:
     service-url:
