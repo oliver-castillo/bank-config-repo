@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: bank-mobile-wallet-microservice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bank-mobile-wallet-service-db
+      auto-index-creation: true
+  webflux:
+    base-path: /api/v1/mobile-wallets
+server:
+  port: 7079
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
